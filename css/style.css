@@ -1,0 +1,302 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --color-orange: #f19d2f;
+  --color-orange-light: #ffd1ac;
+  --color-line: #E27500;
+  --color-green: #37d997;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-background: #F0F0F0;
+}
+
+.container {
+  width: 390px;
+  margin: 0 auto;
+}
+
+.header__top {
+  background-color: var(--color-orange);
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.header__top-text {
+  display: inline-block;
+  position: relative;
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  font-size: 12.694px;
+  text-transform: uppercase;
+}
+
+.header__top-text::after {
+  content: "";
+  background-image: url("../img/za.png");
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: -15px;
+  top: 2px;
+}
+
+.header__top-text::before {
+  content: "";
+  background-image: url("../img/za.png");
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  right: -15px;
+  top: 2px;
+}
+
+.header__bottom {
+  background-color: var(--color-orange-light);
+  padding: 19px 86px;
+}
+
+.header__logo {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.header__logo-text {
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  font-size: 13.469px;
+  color: var(--color-black);
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.main .container {
+  background-color: var(--color-background)
+}
+
+.slippers__wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.slippers__img {
+  display: inline-block;
+  width: 390px;
+  height: 281px;
+}
+
+.slippers__timer {
+  position: absolute;
+  box-sizing: border-box;
+  width: 103px;
+  height: 58px;
+  background-color: var(--color-orange);
+  border-radius: 7px;
+  bottom: 14px;
+  left: 13px;
+  padding: 9px 7px;
+}
+
+.slippers__price {
+  position: absolute;
+  padding: 6px 7px;
+  width: 116px;
+  height: 58px;
+  background-color: var(--color-green);
+  border-radius: 5.67px;
+  bottom: 14px;
+  right: 13px;
+}
+
+.timer,
+.price {
+  box-sizing: border-box;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+}
+
+.price {
+  text-align: center;
+}
+
+.price__new {
+  font-size: 22.301px;
+  margin: 3px 0 0 0;
+}
+
+.price__old {
+  position: relative;
+  font-size: 18.077px;
+}
+
+.price__old::after {
+  position: absolute;
+  content: "_";
+  top: 45%;
+  left: 5px;
+  width: 89px;
+  height: 3.514px;
+  background-color: var(--color-line);
+}
+
+.timer__numbers {
+  font-size: 21.254px;
+  margin: 5px 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+.timer__text {
+  font-size: 10.6px;
+}
+
+.slippers-info {
+  margin: 11px 16px 0 16px;
+  padding: 0 0 41px 0;
+}
+
+
+.evaluation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Gotham_Pro_Regular", Arial, Helvetica, sans-serif;
+}
+
+.evaluation__item1 {
+  font-size: 12.067px;
+}
+
+.evaluation__item3 {
+  font-size: 12.067px;
+  color: var(--color-green);
+  text-decoration-line: underline;
+}
+
+.slippers-info__name-text {
+  font-size: 19.168px;
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.photos__previews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.photos__previews-item {
+  width: 80px;
+  height: 66px;
+}
+
+.photos__previews-item_active {
+  opacity: 0.4;
+}
+
+.description {
+  color: #000;
+  font-size: 15.29px;
+  font-family: "Gotham_Pro_Regular", Arial, Helvetica, sans-serif;
+
+}
+
+.description__delivery-title,
+.description__stock-title {
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+}
+
+.description div:not(:last-child) {
+  margin: 0 0 12px 0;
+  display: inline-block;
+  position: relative;
+}
+
+.description div:not(:last-child)::before {
+  content: "";
+  background-image: url("../img/za.png");
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  right: -15px;
+  top: 3px;
+}
+
+.params {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.params__color, .params__size {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+}
+
+.params div label {
+  font-size: 10px;
+  text-align: center;
+  font-family: "Gotham_Pro_Regular", Arial, Helvetica, sans-serif;
+}
+
+.button {
+    font-family: "Gotham_Pro_Regular", Arial, Helvetica, sans-serif;
+    color: #FFF;
+    border-radius: 15px;
+    background-color: var(--color-green);
+    border: none;
+    width: 356px;
+    height: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.params__choice {
+  text-align: center;
+  width: 170px;
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  text-align: center;
+  font-size: 21.69px;
+  font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+}
+
+.params__choice option {
+  font-family: "SF_Pro_Display_Regular", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.animate-hidden {
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.animate-visible {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}

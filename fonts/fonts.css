@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Gotham Bold";
+  src: local("Gotham Bold"),
+    url("gothampro/woff/gothampro_bold.woff") format("woff"),
+    url("gothampro/ttf/gothampro_bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Gotham_Pro_Regular";
+  src: local("Gotham_Pro_Regular"),
+    url("gothampro/ttf/gothampro.ttf") format("ttf"),
+    url("gothampro/woff/gothampro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF_Pro_Display_Regular";
+  src: local("SF_Pro_Display_Regular"),
+    url("sanFranciscoPro/ttf/SF-Pro-Display-Regular.ttf") format("ttf"),
+    url("sanFranciscoPro/woff/SF-Pro-Display-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham_Pro_Medium";
+  src: local("Gotham_Pro_Medium"),
+    url("gothampro/ttf/gothampro_medium.ttf") format("ttf"),
+    url("gothampro/woff/gothampro_medium.woff") format("woff");
+}
