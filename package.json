@@ -1,0 +1,25 @@
+{
+  "name": "slippers",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://albshar.github.io/slippers/",
+  "description": "Тестовое задание для frontend-разработчика (Toster media)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbShar/slippers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlbShar/slippers/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
