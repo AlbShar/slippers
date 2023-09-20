@@ -23,7 +23,7 @@ body {
 
 .header__top {
   background-color: var(--color-orange);
-  padding: 10px 14px;
+  padding: 8px 14px;
   text-align: center;
 }
 
@@ -33,6 +33,7 @@ body {
   font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
   font-size: 12.694px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .header__top-text::after {
@@ -72,7 +73,7 @@ body {
   font-size: 13.469px;
   color: var(--color-black);
   text-align: center;
-  margin: 10px 0 0 0;
+  margin: 2px 0 0 0;
 }
 
 .main .container {
@@ -98,8 +99,8 @@ body {
   height: 58px;
   background-color: var(--color-orange);
   border-radius: 7px;
-  bottom: 14px;
-  left: 13px;
+  bottom: 19px;
+  left: 14px;
   padding: 9px 7px;
 }
 
@@ -110,7 +111,7 @@ body {
   height: 58px;
   background-color: var(--color-green);
   border-radius: 5.67px;
-  bottom: 14px;
+  bottom: 20px;
   right: 13px;
 }
 
@@ -138,7 +139,7 @@ body {
 
 .price__old::after {
   position: absolute;
-  content: "_";
+  content: "";
   top: 45%;
   left: 5px;
   width: 89px;
@@ -147,10 +148,11 @@ body {
 }
 
 .timer__numbers {
-  font-size: 21.254px;
+  font-size: 19px;
   margin: 5px 0 0 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -160,7 +162,7 @@ body {
 }
 
 .slippers-info {
-  margin: 11px 16px 0 16px;
+  margin: 8px 16px 0 16px;
   padding: 0 0 41px 0;
 }
 
@@ -176,6 +178,10 @@ body {
   font-size: 12.067px;
 }
 
+.evaluation__item2 {
+  margin: 0 22px 0 0;
+}
+
 .evaluation__item3 {
   font-size: 12.067px;
   color: var(--color-green);
@@ -185,7 +191,7 @@ body {
 .slippers-info__name-text {
   font-size: 19.168px;
   font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
-  margin: 20px 0;
+  margin: 15px 0 20px 0;
   text-transform: uppercase;
 }
 
@@ -193,12 +199,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 15px 0 20px 0;
 }
 
 .photos__previews-item {
   width: 80px;
   height: 66px;
+  cursor: pointer;
 }
 
 .photos__previews-item_active {
@@ -218,7 +225,7 @@ body {
 }
 
 .description div:not(:last-child) {
-  margin: 0 0 12px 0;
+  margin: 0 0 9px 0;
   display: inline-block;
   position: relative;
 }
@@ -238,7 +245,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 18px 0 20px 0;
 }
 
 .params__color, .params__size {
@@ -275,16 +282,22 @@ body {
   text-align: center;
   width: 170px;
   height: 50px;
-  border-radius: 7px;
+  border-radius: 17px;
   border: none;
   text-align: center;
   font-size: 21.69px;
   font-family: "Gotham Bold", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding: 0 0 0 13px;
 }
 
 .params__choice option {
   font-family: "SF_Pro_Display_Regular", Arial, Helvetica, sans-serif;
   font-size: 12px;
+}
+
+.params__label {
+  margin: 0 0 5px 0;
 }
 
 .animate-hidden {
